@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>בדיקת פיענוח ההודעה לפי מפתח ציבורי ר.ס.א</h2>
+
+<p>אנא הכניסו את ההודעה המפוענחת</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">שלחו</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number = 42
+  if (isNaN(x) || x != 42) {
+    text = "למרבה הצער זו טעות, נסו לחשב שוב";
+  } else {
+    text = "כל הכבוד! מצאתם את התשובה לחיים, היקום וכל השאר";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
