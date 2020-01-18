@@ -2,19 +2,19 @@
 <html>
   <head>
 <style>
-.round1 {
+.round_gradient {
   border: 2px solid grey;
   border-radius: 5px;
   
   text-align: center;
-  background: rgb(50,50,50);
-background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(135,135,135,1) 50%, rgba(255,255,255,1) 100%);
+  background: rgb(84,84,84);
+  background: linear-gradient(90deg, rgba(84,84,84,1) 0%, rgba(255,255,255,1) 50%, rgba(84,84,84,1) 100%);
 }
 </style>
 </head>
 <body>
 
-<div class="round1">
+<div class="round_gradient">
 <h2>אנא הכניסו את ההודעה שפיענחתם</h2>
 
 <input id="numb">
@@ -30,7 +30,7 @@ function myFunction() {
   // Get the value of the input field with id="numb"
   x = document.getElementById("numb").value;
 
-  // If x is Not a Number = 42
+  // If x is nor a number neither the right one
   if (isNaN(x) || x != 42) {
     text = "למרבה הצער זו טעות, נסו לחשב שוב";
   } else {
